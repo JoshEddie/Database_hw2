@@ -1,0 +1,224 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: rgb(7, 18, 53);
+}
+
+main {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+h2 .greenText {
+    color: #27ca47;
+}
+
+.infoSection {
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 110px;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    background-color: #4c68bd;
+    border-radius: 20px;
+}
+
+.infoSection h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.infoSection button {
+    width: 20%;
+    cursor: pointer;
+    background-color: #1a2c62;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.infoSection button:hover {
+    background-color: #1c9735;
+}
+
+#userAccount button,
+#phoneCall button,
+.infoSection.call button {
+    width: 100%;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+#phoneCall button {
+    background-color: #1c9735;
+}
+
+#phoneCall button:hover {
+    background-color: #0e4e1b;
+}
+
+.infoSection.call button {
+    background-color: #c41a1a;
+}
+
+.infoSection.call button:hover {
+    background-color: #690a0a;
+}
+
+#userAccount {
+    width: calc(64% - 40px);
+    left: 0;
+}
+
+.infoSection.phone {
+    width: calc(34% - 40px);
+    left: 66%;
+    right: 0;
+}
+
+.infoSection.call h4 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.phone ul {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.phone li {
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid #1a2c62;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 3px 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+     user-select: none; /* Standard syntax */
+}
+
+.phone li:hover {
+    background-color: #1c9735;
+    cursor: pointer;
+}
+
+.phone .backspace::after {
+    content:" ";
+    position: absolute;
+    right: 129px;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #c41a1a;
+	border-bottom: 20px solid transparent;
+    border-left: none
+}
+
+.phone .backspace {
+    background-color: #c41a1a;
+    border-color: #c41a1a;
+    border-radius: 0;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 3px 10px 3px 30px;
+}
+
+.phone .backspace:hover {
+    background-color: #690a0a;
+    border-color: #690a0a;
+}
+
+.phone .backspace:hover::after {
+	border-right-color: #690a0a;
+}
+
+#dial {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#callBackground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(26, 44, 98, 0.8);
+    z-index:2
+}
+
+#currentCall {
+    width: calc(34% - 40px);
+    left: 66%;
+    height: 130px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.tableList {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.tableList th {
+    text-align: center;
+    font-weight: 400;
+    background-color: #1a2c62;
+    padding: 5px;
+}
+
+.tableList td {
+    border:1px solid #1a2c62;
+    padding: 5px;
+}
+
+.tableList tr:hover {
+    background-color: #1c9735;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

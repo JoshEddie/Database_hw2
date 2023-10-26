@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8"> 
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Language" content="en">  
+
+<head>
+
+    <title>Team 07 - Database HW2</title>
+
+    <link type="text/css" rel="stylesheet" media="all" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <main>
+        <h1>Database HW2</h1>
+        <h2><span class="greenText">Team Seven</span> Cell Phones</h2>
+
+        <section id="accountSelection" class="infoSection">
+
+            <h3>Which Account do you need?</h3>
+
+            <table id="customerList" class="tableList">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+            </table>
+
+            <button>Create Account</button>
+
+        </section>
+
+        <section id="callBackground" style="display: none;">
+            <section id="currentCall" class="infoSection call">
+            
+                <h3 id="callWith"></h3>
+                <h4 id="timer">00:00:00</h4>
+                <button onclick="endCall()">Hangup</button>
+            
+            </section>
+        </section>
+
+        <section id="phoneCall" class="infoSection phone" style="display: none;">
+        
+            <h3>Phone:</h3>
+            <h4 id="dial"></h4>
+
+            <ul>
+                <li onclick="dial('1')">1</li>
+                <li onclick="dial('2')">2</li>
+                <li onclick="dial('3')">3</li>
+                <li onclick="dial('4')">4</li>
+                <li onclick="dial('5')">5</li>
+                <li onclick="dial('6')">6</li>
+                <li onclick="dial('7')">7</li>
+                <li onclick="dial('8')">8</li>
+                <li onclick="dial('9')">9</li>
+                <li onclick="dial('')">*</li>
+                <li onclick="dial('0')">0</li>
+                <li class="backspace" onclick="dial()">x</li>
+            </ul>
+
+            <button onclick="call()">Call</button>
+        
+        </section>
+        <section id="userAccount" class="infoSection" style="display: none;"></section>
+        <section id="callHistory" class="infoSection" style="display: none;"></section>
+
+    </main>
+
+    <script>
+        populateCustomer();
+    </script>
+
+</body>
+
+</html>
